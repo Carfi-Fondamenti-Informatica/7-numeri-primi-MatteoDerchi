@@ -5,7 +5,7 @@
 #include "lib.h"
 bool numeroprimo(int a){
     bool t;
-    for(int i=2;i<a;i++){
+    for(int i=2;i<a;){
         if (a%i != 0){
             t= true;
             return (t);
@@ -13,5 +13,5 @@ bool numeroprimo(int a){
             t=false;
             return (t);
         }
-    }
+    }return bool(a);
 }
