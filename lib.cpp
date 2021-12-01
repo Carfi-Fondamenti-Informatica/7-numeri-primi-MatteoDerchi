@@ -3,15 +3,18 @@
 //
 
 #include "lib.h"
-bool numeroprimo(int a){
-    bool t;
-    for(int i=2;i<a;){
-        if (a%i != 0){
-            t= true;
-            return (t);
-        }else{
-            t=false;
-            return (t);
-        }
-    }return bool(a);
+bool numeroprimo (int a,int b){
+    if (a<0){
+        return false;
+    }
+    else if (a==1){
+        return true;
+    }
+    else if (b==1){
+        return true;
+    }
+    else if (a%b==0){
+        return false;
+    }
+    numeroprimo(a,--b);
 }
