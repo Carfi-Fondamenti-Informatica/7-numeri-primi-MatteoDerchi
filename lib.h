@@ -6,4 +6,4 @@
 #define ESERCITAZIONE_7_LIB_H
 
 #endif //ESERCITAZIONE_7_LIB_H
-bool numeroprimo(int a);
+bool numeroprimo (int, int);
